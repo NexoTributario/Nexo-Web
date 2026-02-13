@@ -451,7 +451,7 @@ const App: React.FC = () => {
                 
                 <div className="grid gap-6">
                   {[
-                    { icon: 'place', label: 'Ubicación Estratégica', val: 'Vía a la Costa Km 22, Edificio Nexo GYE' },
+                    { icon: 'place', label: 'Ubicación Estratégica', val: 'Vía a la Costa Km 22, Nexo GYE' },
                     { icon: 'chat', label: 'WhatsApp Corporativo', val: 'Click para iniciar chat', link: WHATSAPP_LINK },
                     { icon: 'bolt', label: 'Enlace Directo', val: 'https://wsab.me/ISNz2N', link: WHATSAPP_LINK }
                   ].map((item, idx) => (
