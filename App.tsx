@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar.tsx';
-import Logo from './components/Logo.tsx';
-import ThemeToggle from './components/ThemeToggle.tsx';
+import Navbar from './components/Navbar';
+import Logo from './components/Logo';
+import ThemeToggle from './components/ThemeToggle';
 import { NEWS_MOCK, OBLIGATIONS_MOCK } from './constants.tsx';
 import { Entity, NewsArticle } from './types';
 import { analyzeResolution, askTaxQuery } from './services/geminiService';
