@@ -6,7 +6,7 @@ const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 export async function analyzeResolution(title: string, excerpt: string) {
   try {
     const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-1.5-flash',
       contents: `Analiza brevemente esta resolución tributaria ecuatoriana y dame 3 puntos clave para una empresa. 
       Título: ${title}
       Resumen: ${excerpt}
