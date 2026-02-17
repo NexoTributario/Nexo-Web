@@ -1,7 +1,7 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || "");
+const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || '');
 
 export async function analyzeResolution(title: string, excerpt: string) {
   try {
