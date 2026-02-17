@@ -5,7 +5,7 @@ const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY || '');
 
 export async function analyzeResolution(title: string, excerpt: string) {
   try {
-    const response = await ai.models.generateContent({
+    const response = await ai.getGenerativeModel({
       model: 'gemini-1.5-flash',
       contents: `Analiza brevemente esta resolución tributaria ecuatoriana y dame 3 puntos clave para una empresa. 
       Título: ${title}
@@ -22,8 +22,8 @@ export async function analyzeResolution(title: string, excerpt: string) {
 
 export async function askTaxQuery(query: string) {
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
+    const response = await ai.getGenerativeModel({
+      model: 'gemini-1.5-flash',
       contents: query,
       config: {
         systemInstruction: "Eres un experto en leyes tributarias y contables del Ecuador. Responde de forma precisa, citando normativas si es posible. Si no estás seguro, recomienda consultar con un profesional de NEXO Tributario.",
